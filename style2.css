@@ -1,0 +1,386 @@
+.cover{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	justify-content: space-around;
+	background-color: #F5F5F5;
+}
+.cover .left{
+	width: 450px;
+	height: 500px;
+	margin: 10px;
+}
+.cover .left img{
+	width: 100%;
+	height: 100%;
+}
+.cover .right{
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Noto Sans JP', sans-serif;
+	padding: 10px;
+}
+.cover .right h3{
+	font-size: 20px;
+	font-weight: 500;
+	word-spacing: 2px;
+	margin-bottom: 10px;
+	color:#FFC107;
+}
+.cover .right h2{
+	letter-spacing: 1.7px;
+	margin-top: 2px;
+	font-size: 34px;
+	font-weight: 600;
+	word-spacing: 3px;
+}
+.advantages{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.advantages > div{
+	width: 330px;
+	height: 280px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	-webkit-box-shadow: 0px 0px 26px 10px rgba(222,222,222,1);
+	-moz-box-shadow: 0px 0px 26px 10px rgba(222,222,222,1);
+	box-shadow: 0px 0px 26px 10px rgba(222,222,222,1);
+}
+.advantages > div:nth-child(1){
+	background-color: #FFC107;
+}
+.advantages > div .icon{
+	width: 50px;
+	height: 50px;
+	padding: 20px;
+	align-self: center;
+}
+.advantages > div .icon img{
+	width: 100%;
+	height: 100%;
+}
+.advantages > div h3{
+	font-size: 22px;
+	font-weight: 500;
+	word-spacing: 2px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	text-align: center;
+}
+.advantages > div .line{
+	width: 30px;
+	height: 2px;
+	background-color: #FFC107;
+	align-self: center;
+}
+.advantages > div:nth-child(1) .line{
+	background-color: white;
+}
+.advantages > div p{
+	margin-top: 15px;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 2px;
+	font-weight: 300;
+	padding: 10px;
+	color: #424949;
+}
+.features{
+	margin-top: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 75vh;
+	background-color: #F5F5F5;
+}
+
+.features nav{
+	display: flex;
+	flex-direction: row;
+	width: 100px;
+	justify-content: center;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.features nav a{
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	margin: 10px;
+}
+.features nav a:nth-child(1) img{
+	width: 100%;
+	height: 100%;
+	transform: rotate(90deg);
+}
+.features nav a:nth-child(2) img{
+	width: 100%;
+	height: 90%;
+	transform: rotate(-90deg);
+}
+.features > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	height: 70vh;
+	overflow-y: hidden;
+}
+.features > div:hover{
+	overflow-y: auto;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+}
+.features > div::-webkit-scrollbar{
+	width: 10px;
+	height: 10px;
+}
+.features > div::-webkit-scrollbar-thumb{
+	  background: black;
+  border-radius: 10px;
+}
+.features > div::-webkit-scrollbar-track{
+	background: transparent;
+}
+.features > div .info{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.features > div .info h2{
+	width: 300px;
+	font-size: 26px;
+	font-weight: 600;
+	word-spacing: 3px;
+	align-self: center;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.features > div .info img{
+	width: 330px;
+	height: 420px;
+}
+.features > div .info p{
+	width: 370px;
+	font-weight: 400;
+	font-size: 16px;
+	word-spacing: 2px;
+	align-self: center;
+}
+
+@media screen and (max-width: 760px){
+	.features{
+		height: 100vh;
+	}
+	.features > div .info:nth-child(2){
+		margin-top: 50%;
+	}
+}
+
+.courses-cat{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+.courses-cat h2{
+	margin-bottom: 20px;
+	font-size: 32px;
+	font-weight: 600;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding: 15px;
+}
+.courses-cat .cat{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.courses-cat .cat .crd{
+	width: 330px;
+	margin: 10px 25px 20px 15px;
+	display: flex;
+	flex-direction: column;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	-webkit-box-shadow: 0px 0px 26px 10px rgba(222,222,222,1);
+	-moz-box-shadow: 0px 0px 26px 10px rgba(222,222,222,1);
+	box-shadow: 0px 0px 26px 10px rgba(222,222,222,1);
+}
+.courses-cat .cat .crd img{
+	width: 330px;
+	height: 220px;
+}
+.courses-cat .cat .crd h2{
+	font-size: 26px;
+	font-weight: 500;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	letter-spacing: 0;
+	word-spacing: 3px;
+	padding-left: 10px;
+	margin-top: 7px;
+	margin-bottom: 0px;
+	line-height: 29px;
+	text-align: center;
+}
+.courses-cat .cat .crd h3{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	letter-spacing: 0;
+	word-spacing: 3px;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.courses-cat .cat .crd .line{
+	margin-top: 2px;
+	width: 30px;
+	height: 2px;
+	background-color: #FFC107;
+	align-self: center;
+	position: relative;
+	top: -5px;
+}
+.courses-cat .cat .crd p{
+	margin-top: 2px;
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0px;
+	word-spacing: 2px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.courses-cat .cat .crd .link{
+	margin-bottom: 10px;
+}
+.courses-cat .cat .crd .link a{
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.courses-cat .cat .crd .link a p{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	letter-spacing: 0px;
+	word-spacing: 3px;
+	margin-right: 7px;
+	color: #FFC107;
+	align-self: center;
+}
+.courses-cat .cat .crd .link a img{
+	height: 10px;
+	width: 27px;
+	align-self: center;
+	position: relative;
+	top: -10px;
+}
+.curriculum{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.curriculum .left{
+	width: 500px;
+	margin-bottom: 20px;
+}
+.curriculum .left img{
+	width:100%;
+	height: 250px;
+	align-self: center;
+	border-radius: 7px;
+}
+.curriculum .right{
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.curriculum .right h2{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 0px;
+	word-spacing: 2px;
+	margin-bottom: 10px;
+	padding-left: 10px;	
+}
+.curriculum .right p{
+	padding-left: 10px;
+	margin-top: 2px;
+	font-size: 16px;
+	font-weight: 300;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	letter-spacing: 0px;
+	word-spacing: 2px;
+	margin-bottom: 20px;
+}
+.curriculum .right a{
+	margin-top: 20px;
+	text-decoration: none;
+	width: 180px;
+	height: 40px;
+	background-color:#FFC107;
+	border-radius: 18px;
+	text-align: center; 
+	justify-content: center;
+	padding-top: 10px;
+	font-weight: 400;
+	font-size: 20px;
+	color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.join-us{
+	width: 100%;
+	margin-top: 40px;
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-self: center;
+}
+.join-us >div{
+	width: 100%;
+	height: 55vh;
+	position: relative;
+}
+.join-us >  div h2{
+	position: absolute;
+	top:20px;
+	font-size: 28px;
+	font-weight: 600;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	left:22%;
+}
+@media (max-width: 760px){
+	.join-us > div{
+		height: 35vh;
+	}
+	.join-us > div h2{
+		font-size: 24px;
+		top: 65%;
+		left: 15%;
+	}
+}
+
+.join-us >div img{
+	width: 100%;
+	height: 100%;
+}
